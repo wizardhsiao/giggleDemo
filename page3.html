@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .owls01 {
+            position: absolute;
+            width: 14.6%;
+            top: 9.6%;
+            left: 19.5%;
+        }
+
+        .flamingos01 {
+            position: absolute;
+            width: 14.6%;
+            height: 18.2%;
+            top: 29.5%;
+            left: 22%;
+        }
+
+        .lions01 {
+            position: absolute;
+            width: 15%;
+            /* height: 18%; */
+            top: 31%;
+            left: 5%;
+        }
+
+        .elephant01 {
+            position: absolute;
+            width: 15%;
+            top: 50%;
+            left: 16.5%;
+        }
+
+        .zebra01 {
+            position: absolute;
+            width: 15%;
+            top: 49.5%;
+            left: 32%;
+        }
+
+        .elephant02 {
+            position: absolute;
+            width: 12.2%;
+            top: 11.8%;
+            right: 26.3%
+        }
+
+        .zebra02 {
+            position: absolute;
+            width: 11.6%;
+            top: 30%;
+            right: 4%
+        }
+
+        .owls02 {
+            position: absolute;
+            width: 9%;
+            top: 15.5%;
+            right: 16.5%;
+        }
+
+        .lions02 {
+            position: absolute;
+            width: 11.3%;
+            top: 12.4%;
+            right: 4.4%;
+        }
+
+        .flamingos02 {
+            position: absolute;
+            width: 10.5%;
+            top: 33%;
+            right: 16.4%;
+        }
+
+        .animation {
+            animation: pulse 2s infinite linear;
+        }
+
+        .icon {
+            position: absolute;
+            top: 9.7%;
+            left: 37%;
+            width: 108px;
+            height: 32px;
+
+        }
+
+        .iconP24 {
+            position: absolute;
+            top: 11.5%;
+            right: 39.3%;
+            width: 108px;
+            height: 32px;
+        }
+        audio::-webkit-media-controls-panel{
+            background-image: url(../img/icon-01-01.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="container">
+            <a class="arrow_left" href="page2.html"></a>
+            <div class="wow fadeIn" data-wow-delay='0.3s'>
+                <img src="img/page3.png" style="width: 100%; margin-top: 1%;" alt="">
+                <div class="example">
+                    <audio src="audio/Giggles B4-U3-02 Learn" controls class="icon"></audio>
+                    <button class="button"><img src="img/page3owls-01.png" class="owls01" alt=""></button>
+                    <button class="button"><img src="img/page3flamingos-01.png" alt="" class="flamingos01"></button>
+                    <button class="button"><img src="img/page3lions-01.png" alt="" class="lions01"></button>
+                    <button class="button"><img src="img/page3elephants-01.png" alt="" class="elephant01"></button>
+                    <button class="button"><img src="img/page3zebras-01.png" alt="" class="zebra01"></button>
+                    <button class="button"><img src="img/page3elephants-02-01.png" alt="" class="elephant02"></button>
+                    <button class="button"><img src="img/page3zebras-02-01.png" alt="" class="zebra02"></button>
+                    <button class="button"><img src="img/page3owls-02-01.png" alt="" class="owls02"></button>
+                    <button class="button"><img src="img/page3lions-02-01.png" alt="" class="lions02"></button>
+                    <button class="button"><img src="img/page3flamingos-02-01.png" alt="" class="flamingos02"></button>
+                    <audio src="audio/Giggles B4-U3-03 Explore" controls class="iconP24"></audio>
+                </div>
+            </div>
+            <a class="arrow_right" href="page4.html"></a>
+        </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js'></script>
+    <script>
+        new WOW().init();
+        $(document).ready(function () {
+            $('.owls01').click(function () {
+                $(this).toggleClass('animation');
+            })
+
+            $('.flamingos01').click(function () {
+                $(this).toggleClass('animation');
+            })
+
+            $('.lions01').click(function () {
+                $(this).toggleClass('animation');
+            })
+
+            $('.elephant01').click(function () {
+                $(this).toggleClass('animation');
+            })
+
+            $('.zebra01').click(function () {
+                $(this).toggleClass('animation');
+            })
+
+            $('.elephant02').click(function () {
+                $(this).toggleClass('animation');
+            })
+
+            $('.owls02').click(function () {
+                $(this).toggleClass('animation');
+            })
+
+            $('.flamingos02').click(function () {
+                $(this).toggleClass('animation');
+            })
+
+            $('.lions02').click(function () {
+                $(this).toggleClass('animation');
+            })
+
+            $('.zebra02').click(function () {
+                $(this).toggleClass('animation');
+            })
+        })
+    </script>
+</body>
+
+</html>

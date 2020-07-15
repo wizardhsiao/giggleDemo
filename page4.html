@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/videobox.css">
+    <style>
+        .elephant01 {
+            position: absolute;
+            width: 10.5%;
+            top: 18.5%;
+            right: 36%;
+        }
+
+        .tiger01 {
+            position: absolute;
+            width: 10%;
+            top: 12.3%;
+            right: 25.3%
+        }
+
+        .zebra01 {
+            position: absolute;
+            width: 10.8%;
+            top: 28%;
+            right: 25.3%;
+        }
+
+        .giraffe01 {
+            position: absolute;
+            width: 11%;
+            top: 50.2%;
+            right: 37.5%;
+        }
+
+        .panther01 {
+            position: absolute;
+            width: 11.3%;
+            top: 66.2%;
+            right: 36.4%;
+        }
+
+        .zebra02 {
+            position: absolute;
+            width: 7.7%;
+            top: 15.3%;
+            right: 15.8%;
+        }
+
+        .elephant02 {
+            position: absolute;
+            width: 10.3%;
+            top: 22.6%;
+            right: 4.3%;
+        }
+
+        .tiger02 {
+            position: absolute;
+            width: 11.5%;
+            top: 40.6%;
+            right: 15%;
+        }
+
+        .animation {
+            animation: pulse 2s infinite linear;
+        }
+
+        .video_btn {
+            position: absolute;
+            width: 7.5%;
+            top: 5.8%;
+            left: 15.2%;
+        }
+
+        .iconP25 {
+            position: absolute;
+            top: 5.5%;
+            left: 25.5%;
+            width: 111px;
+            height: 35px;
+        }
+
+        .iconP26 {
+            position: absolute;
+            top: 5.5%;
+            right: 27%;
+            width: 106px;
+            height: 30px;
+        }
+        audio::-webkit-media-controls-panel{
+            background-image: url(../img/icon-01-01.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="container">
+            <a class="arrow_left" href="page3.html"></a>
+            <div class="wow fadeIn" data-wow-delay='0.3s'>
+                <img src="img/page4.png" style="width: 100%; margin-top: 1%;" alt="">
+                <a href="videos/b4u3song.mp4" rel="vidbox"><img src="img/video_btn-01.png" alt="" class="video_btn"></a>
+                <div class="example">
+                    <audio src="audio/Giggles B4-U3-04 Sing" controls class="iconP25"></audio>
+                    <div class="button"><img src="img/page4elephant-skin.png" alt="" class="elephant01"></div>
+                    <div class="button"><img src="img/page4tiger-skin.png" alt="" class="tiger01"></div>
+                    <div class="button"><img src="img/page4zebra-skin.png" alt="" class="zebra01"></div>
+                    <div class="button"><img src="img/page4giraffe-skin.png" alt="" class="giraffe01"></div>
+                    <div class="button"><img src="img/page4panther-skin.png" alt="" class="panther01"></div>
+                    <audio src="audio/Giggles B4-U3-05 Karaoke" controls class="iconP26"></audio>
+                    <div class="button"><img src="img/page4zebra-02.png" alt="" class="zebra02"></div>
+                    <div class="button"><img src="img/page4elephant-02.png" alt="" class="elephant02"></div>
+                    <div class="button"><img src="img/page4tiger-02.png" alt="" class="tiger02"></div>
+                    <div class="button"><img src="" alt="" class=""></button>
+                        <div class="button"><img src="" alt="" class=""></button>
+                        </div>
+                    </div>
+                    <a class="arrow_right" href="page5.html"></a>
+                </div>
+            </div>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js'></script>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js'></script>
+            <!-- <script src="js/mootools.js"></script> -->
+            <script src="js/swfobject.js"></script>
+            <script src="js/videobox.js"></script>
+            <script>
+                new WOW().init();
+
+                $(document).ready(function () {
+                    $('.tiger01').click(function () {
+                        $(this).toggleClass('animation');
+                    })
+
+                    $('.panther01').click(function () {
+                        $(this).toggleClass('animation');
+                    })
+
+                    $('.giraffe01').click(function () {
+                        $(this).toggleClass('animation');
+                    })
+
+                    $('.elephant01').click(function () {
+                        $(this).toggleClass('animation');
+                    })
+
+                    $('.zebra01').click(function () {
+                        $(this).toggleClass('animation');
+                    })
+                })
+
+            </script>
+</body>
+
+</html>

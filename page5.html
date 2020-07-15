@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .pandas {
+            position: absolute;
+            width: 17.4%;
+            left: 3.5%;
+            top: 13%;
+        }
+
+        .sloths {
+            position: absolute;
+            width: 11.2%;
+            left: 22.4%;
+            top: 12.6%;
+        }
+
+        .giraffes {
+            position: absolute;
+            width: 11.4%;
+            left: 34.6%;
+            top: 11%;
+        }
+
+        .tigers {
+            position: absolute;
+            width: 17.3%;
+            left: 12.3%;
+            top: 40.44%;
+        }
+
+        .kangroos {
+            position: absolute;
+            width: 16.1%;
+            left: 30.8%;
+            top: 40.8%;
+        }
+
+        .animation {
+            animation: pulse 2s infinite linear;
+        }
+
+        .iconP27 {
+            position: absolute;
+            top: 5.5%;
+            left: 16%;
+            width: 106px;
+            height: 30px;
+        }
+
+        .iconP28 {
+            position: absolute;
+            top: 5.5%;
+            right: 25.5%;
+            width: 106px;
+            height: 30px;
+        }
+        audio::-webkit-media-controls-panel{
+            background-image: url(../img/icon-01-01.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="container">
+            <a class="arrow_left" href="page4.html"></a>
+            <div class="wow fadeIn" data-wow-delay='0.3s'>
+                <img src="img/page5.png" style="width: 100%; margin-top: 1%;" alt="">
+                <audio src="audio/Giggles B4-U3-07 Learn" controls class="iconP27"></audio>
+                <div class="button"><img src="img/page5pandas-01.png" alt="" class="pandas"></div>
+                <div class="button"><img src="img/page5sloths-01.png" alt="" class="sloths"></div>
+                <div class="button"><img src="img/page5giraffes-01.png" alt="" class="giraffes"></div>
+                <div class="button"><img src="img/page5tigers-01.png" alt="" class="tigers"></div>
+                <div class="button"><img src="img/page5kangaroos-01.png" alt="" class="kangroos"></div>
+                <audio src="audio/Giggles B4-U3-08 Explore" controls class="iconP28"></audio>
+            </div>
+            <a class="arrow_right" href="page6.html"></a>
+        </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js'></script>
+    <script>
+        new WOW().init();
+
+        $(document).ready(function () {
+            $('.pandas').click(function () {
+                $(this).toggleClass('animation');
+            })
+
+            $('.sloths').click(function () {
+                $(this).toggleClass('animation');
+            })
+
+            $('.giraffes').click(function () {
+                $(this).toggleClass('animation');
+            })
+
+            $('.tigers').click(function () {
+                $(this).toggleClass('animation');
+            })
+
+            $('.kangroos').click(function () {
+                $(this).toggleClass('animation');
+            })
+        })
+    </script>
+</body>
+
+</html>

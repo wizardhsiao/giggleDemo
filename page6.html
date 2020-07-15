@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/videobox.css">
+    <style>
+        .page6_01 {
+            position: absolute;
+            width: 18.5%;
+            top: 11.7%;
+            right: 26.6%;
+        }
+
+        .page6_02 {
+            position: absolute;
+            width: 18.5%;
+            top: 37%;
+            right: 26.6%;
+        }
+
+        .page6_03 {
+            position: absolute;
+            width: 18.1%;
+            top: 63%;
+            right: 27%;
+        }
+
+        .page6_04 {
+            position: absolute;
+            width: 18.1%;
+            top: 11.7%;
+            right: 5.5%;
+        }
+
+        .page6_05 {
+            position: absolute;
+            width: 18.1%;
+            top: 37.3%;
+            right: 5.5%;
+        }
+
+        .animation {
+            animation: pulse 2s infinite linear;
+        }
+
+        .video_btn{
+            position: absolute;
+            width: 7.5%;
+            top: 5%;
+            left: 16%;
+        }
+
+        .iconP29 {
+            position: absolute;
+            top: 5%;
+            left: 27%;
+            width: 110px;
+            height: 35px;
+        }
+
+        .iconP30 {
+            position: absolute;
+            top: 5%;
+            right: 21.8%;
+            width: 110px;
+            height: 33px;
+        }
+
+        audio::-webkit-media-controls-panel{
+            background-image: url(../img/icon-01-01.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        /* audio::-webkit-media-controls-play-button{
+            background-image: url(../img/play-01.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+        } */
+        /* audio::-webkit-media-controls-pause-button{
+            background-image: url(../img/pause-01.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+        } */
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="container">
+            <a class="arrow_left" href="page5.html"></a>
+            <div class="wow fadeIn" data-wow-delay='0.3s'>
+                <img src="img/page6.png" style="width: 100%; margin-top: 1%;" alt="">
+                <a href="videos/b4u3rhyme.mp4" rel='vidbox'><img src="img/video_btn-01.png" alt="vidbox" class="video_btn"></a>
+                <audio src="audio/Giggles B4-U3-10 Karaoke" controls class="iconP29"></audio>
+                <div class="button"><img src="img/page6-01-01.png" alt="" class="page6_01"></div>
+                <div class="button"><img src="img/page6-02-01.png" alt="" class="page6_02"></div>
+                <div class="button"><img src="img/page6-03-01.png" alt="" class="page6_03"></div>
+                <div class="button"><img src="img/page6-04-01.png" alt="" class="page6_04"></div>
+                <div class="button"><img src="img/page6-05-01.png" alt="" class="page6_05"></div>
+                <audio src="audio/Giggles B4-U3-11 Show and Tell" controls class="iconP30"></audio>
+            </div>
+            <a class="arrow_right" href="index.html"></a>
+        </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js'></script>
+    <!-- <script src="js/mootools.js"></script> -->
+    <!-- <script src="js/swfobject.js"></script> -->
+    <script src="js/videobox.js"></script>
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/swfobject/2.2/swfobject.js'></script> -->
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/mootools/1.6.0/mootools-core.js'></script> -->
+    <script>
+        new WOW().init();
+
+        $(document).ready(function () {
+            $('.page6_01').click(function () {
+                $(this).toggleClass('animation');
+            })
+
+            $('.page6_02').click(function () {
+                $(this).toggleClass('animation');
+            })
+
+            $('.page6_03').click(function () {
+                $(this).toggleClass('animation');
+            })
+
+            $('.page6_04').click(function () {
+                $(this).toggleClass('animation');
+            })
+
+            $('.page6_05').click(function () {
+                $(this).toggleClass('animation');
+            })
+        })
+    </script>
+</body>
+
+</html>
